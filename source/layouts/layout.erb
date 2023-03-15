@@ -11,6 +11,28 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
+
+    <title><%= current_page.data.title || "NAME OF MY SITE | MY TITLE" %></title>
+    <meta name="description" content="Description of my portfolio site">
+    <!-- Facebook Open Graph data -->
+
+    <meta property="og:title" content="Porfolio | Miriam Fiandanese" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://miriamfiandanese.netlify.app/" />
+    <meta property="og:image" content="<%= image_path 'momiji.png' %>" />
+    <meta property="og:description" content="My porfolio of web projects" />
+    <meta property="og:site_name" content="Porfolio | Miriam Fiandanese" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@twitter_handle">
+    <meta name="twitter:title" content="Porfolio | Miriam Fiandanese">
+    <meta name="twitter:description" content="My porfolio of web projects">
+    <meta name="twitter:creator" content="@twitter_handle">
+    <meta name="twitter:image:src" content="<%= image_path 'momiji.png' %>">
+
+
+
   </head>
   <body>
     <%= yield %>
