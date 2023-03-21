@@ -44,8 +44,8 @@
 
 .external-link {
   margin-left: 8px;
-  opacity: 0;
-  color: $gray;
+  // opacity: 0;
+  color: #57a299;
   transition: opacity 1s;
   &:hover {
     cursor: pointer;
