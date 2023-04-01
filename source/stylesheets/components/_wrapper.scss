@@ -1,0 +1,38 @@
+body{
+  background-color: #171312;
+  color: #cec5ce;
+}
+.wrapper{
+  // max-width: 540px;
+  margin: 0, auto;
+  padding: 72px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper .myname{
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.wrapper p{
+  font-size: 1em;
+
+}
+.wrapper .title{
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3 { grid-area: 1 / 3 / 2 / 5; }
+  .div4 { grid-area: 1 / 5 / 2 / 6; }

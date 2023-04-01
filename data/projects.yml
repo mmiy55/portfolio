@@ -2,11 +2,13 @@
   description: Miraihait helps you to reduce your plastic footprint. Commit and complete daily challenges to save the sea-turtle mascot from plastic pollution.
   image: projects/miraihabit.png
   url: https://www.miraihabit.site/
+  role: UX Design + Lead Developer + Fullstack Developer
 
 - name: Tradys
   description: Tradys allows you to discover, participate and host local events, to enjoy traditions around the world.
   image: projects/tradys.png
   url: https://tradys.herokuapp.com/
+  role: UX Design + Fullstack Developer
 
 # - name: Airbnb
 #   description: Decent description of the app
