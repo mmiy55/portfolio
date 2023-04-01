@@ -3,12 +3,16 @@
   image: projects/miraihabit.png
   url: https://www.miraihabit.site/
   role: UX Design + Lead Developer + Fullstack Developer
+  info: From prototype to MVP, we built this app in 10days in a team of four.
+  stack: Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku
 
 - name: Tradys
   description: Tradys allows you to discover, participate and host local events, to enjoy traditions around the world.
   image: projects/tradys.png
   url: https://tradys.herokuapp.com/
   role: UX Design + Fullstack Developer
+  info: From prototype to MVP, we built this app in 10days in a team of four.
+  stack: Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku
 
 # - name: Airbnb
 #   description: Decent description of the app
