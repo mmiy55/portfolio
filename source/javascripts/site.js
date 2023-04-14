@@ -4,6 +4,10 @@
 
     // Define the language reload anchors
     let language = {
+      it: {
+        about: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku",
+        banner: "banner"
+      },
       en: {
         about: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku",
         banner: "banner"
@@ -17,21 +21,6 @@
          banner: "バナー"
       }
     };
-
-    // let en = {
-    //   about: "about in english"
-    // };
-
-    // let es = {
-    //   about: "about in spanish"
-    // };
-
-    // let jp = {
-    //   about: "こんにちは、ミリアムです。"
-    // };
-    // let it = {
-    //   about: "Ciao!Mi chiamo Miriam。"
-    // }
 
     function changeLanguage(lang) {
 
