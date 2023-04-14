@@ -1,60 +1,69 @@
-// This is where it all goes :)
-// fetch('https://github.com/mmiy55')
-// .then(response=> console.log)
+ // Create a function to change
+    // the hash value of the page
+    console.log("hello")
 
-console.log('This is site.js')
-const user = "mmiy55"
+    // Define the language reload anchors
+    let language = {
+      en: {
+        about: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku",
+        banner: "banner"
+      },
+      es: {
+        about: "Hola!Mi nombre es Miriam",
+        banner: "el baner"
+      },
+      jp : {
+         about: "こんにちは、ミリアムです。",
+         banner: "バナー"
+      }
+    };
 
-fetch(`https://api.github.com/users/${user}/repos`)
-.then(response => response.json())
-.then((data) => {
-  data.forEach(function(element) {
-    const git_url = element.git_url;
-    console.log(git_url)
-  });
-  // data.forEach((repo) =>{
-  //   console.log(repo.name)
-  // })
-  console.log(data)
-  // data.Search.forEach()
-})
+    // let en = {
+    //   about: "about in english"
+    // };
 
+    // let es = {
+    //   about: "about in spanish"
+    // };
 
-// const results = document.querySelector(".title")
+    // let jp = {
+    //   about: "こんにちは、ミリアムです。"
+    // };
+    // let it = {
+    //   about: "Ciao!Mi chiamo Miriam。"
+    // }
 
-// fetch("http://www.omdbapi.com/?s=harry potter&apikey=adf1f2d7")
-//   .then(response => response.json())
-//   .then((data) => {
-//     data.Search.forEach((result) => {
-//       console.log(result)
-//       // const movieTag = `<li class="list-inline-item">
-//       //   <img src="${result.Poster}" alt="">
-//       //   <p>${result.Title}</p>
-//       // </li>`
-//       // results.insertAdjacentHTML("beforeend", movieTag)
-//     })
-//   })
+    function changeLanguage(lang) {
 
+      location.hash = lang;
+      let key = lang.replace("#","")
+      console.log(key)
+      id = document.querySelector(".translate").id
 
-// const query = `{
-//   query PinnedRepos {
-//     viewer {
-//       pinnedItems(first: 6) {
-//         edges {
-//           node {
-//             ... on Repository {
-//               name
-//               description
-//             }
-//           }
-//         }
-//       }
-//     }
+      document.querySelectorAll(".translate").forEach(function(element) {
+        console.log(element.textContent);
+        const id = element.id;
+        element.innerText = language[key][id];
+      }
+      )
+
+    // Check if a hash value exists in the URL
+    // if (window.location.hash) {
+
+  // Set the content of the webpage
+  // depending on the hash value
+//   if (window.location.hash == lang) {
+//     document.querySelector("#aboutContent").innerText = language[lang].about;
 //   }
-// }`;
-
-// fetch("https://api.github.com/graphql",{
-//   method; "POS"
-
+//   else if (window.location.hash == "#jp") {
+//     document.querySelector("#aboutContent").innerText = language.jp.about;
 //   }
-// )
+//   else if (window.location.hash == "#en") {
+//     document.querySelector("#aboutContent").innerText = en.about;
+//   }
+//   else if (window.location.hash == "#it") {
+//     document.querySelector("#aboutContent").innerText = language.it.about;
+//   }
+// }
+
+}
