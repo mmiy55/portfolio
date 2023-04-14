@@ -1,18 +1,20 @@
 <div class="navbar-logo">
 <%# <p>Miriam Fiandanese</p> %>
 </div>
-<div class="btn-group">
+<%# <div class="btn-group">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    English <i class="fa-solid fa-earth-americas"></i>
+    Languages <i class="fa-solid fa-earth-americas"></i>
   </button>
-  <ul class="dropdown-menu dropdown-menu-end">
-    <li><button class="dropdown-item" type="button"> 日本語 <i class="fa-solid fa-earth-americas"></i></button></li>
-    <li><button class="dropdown-item" type="button"> Italiano <i class="fa-solid fa-earth-americas"></i></button></li>
-    <li><button class="dropdown-item" type="button"> Español <i class="fa-solid fa-earth-americas"></i></button></li>
-  </ul>
-</div>
-<%# <div class="navbar-languages">
+  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+    <li><button class="dropdown-item" type="button" id="jp" onclick="changeLanguage('jp')"> 日本語 <i class="fa-solid fa-earth-americas"></i></button></li>
+    <li><button class="dropdown-item" type="button" id ="it" onclick="changeLanguage('it')"> Italiano <i class="fa-solid fa-earth-americas"></i></button></li>
+    <li><button class="dropdown-item" type="button" id ="es" onclick="changeLanguage('es')"> Español <i class="fa-solid fa-earth-americas"></i></button></li>
+    <li><button class="dropdown-item" type="button" id ="en" onclick="changeLanguage('en')"> English <i class="fa-solid fa-earth-americas"></i></button></li>
 
+  </ul>
+</div> %>
+
+<%# <div class="navbar-languages">
 
 <button class="btn btn-outline-secondary" id="en" onclick="changeLanguage('en')">
     Change to English
