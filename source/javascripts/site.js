@@ -5,27 +5,31 @@
     // Define the language reload anchors
     let language = {
       it: {
-        about: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku",
-        banner: "banner"
+        greet: "Ciao, mi chiamo Miriam",
+        about: "Sono una programmatrice di back-end italiana, vivo e lavoro ad Osaka, in Giappone. Amo le lingue , risolvere enigmi e disegnare",
+        skills: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku"
       },
       en: {
-        about: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku",
-        banner: "banner"
+        greet: "Hello, I'm Miriam",
+        about: "I'm a back-end developer, italian based in Osaka, Japan. I love languages, solving puzzles and drawing.",
+        skills: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku"
       },
       es: {
-        about: "Hola!Mi nombre es Miriam",
-        banner: "el baner"
+        greet: "¡Hola! Me llamo Miriam",
+        about: "Soy una programadora italiana, vivo y trabajo en Osaka, Japón. Me encantan los idiomas, resolver acertijos y dibujar. ",
+        skills: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku"
       },
       jp : {
-         about: "こんにちは、ミリアムです。",
-         banner: "バナー"
+         greet: "初めまして、ミリアムです。",
+         about: "イタリア人のバックエンド開発者です。現在大阪に住んでいます。外国語を学ぶことや、パズルの解決や、描を描くのが大好きです。",
+         skills: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku"
       }
     };
 
     function changeLanguage(lang) {
 
-      location.hash = lang;
-      let key = lang.replace("#","")
+      console.log(lang)
+      key = lang
       console.log(key)
       id = document.querySelector(".translate").id
 
@@ -35,6 +39,12 @@
         element.innerText = language[key][id];
       }
       )
+    }
+
+    if (!window.location.hash) {
+      changeLanguage("en")
+    }
+
 
     // Check if a hash value exists in the URL
     // if (window.location.hash) {
@@ -54,5 +64,3 @@
 //     document.querySelector("#aboutContent").innerText = language.it.about;
 //   }
 // }
-
-}
