@@ -1,0 +1,18 @@
+.navbar-portfolio {
+  justify-content: space-between;
+  // background: var(--bs-primary);
+  // color: var(--bs-body-color);
+}
+
+.navbar-portfolio .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-portfolio .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-menu{
+  display: flex;
+  justify-content: space-between;
+}
