@@ -40,23 +40,3 @@
     if (!window.location.hash) {
       changeLanguage("en")
     }
-
-
-    // Check if a hash value exists in the URL
-    // if (window.location.hash) {
-
-  // Set the content of the webpage
-  // depending on the hash value
-//   if (window.location.hash == lang) {
-//     document.querySelector("#aboutContent").innerText = language[lang].about;
-//   }
-//   else if (window.location.hash == "#jp") {
-//     document.querySelector("#aboutContent").innerText = language.jp.about;
-//   }
-//   else if (window.location.hash == "#en") {
-//     document.querySelector("#aboutContent").innerText = en.about;
-//   }
-//   else if (window.location.hash == "#it") {
-//     document.querySelector("#aboutContent").innerText = language.it.about;
-//   }
-// }
