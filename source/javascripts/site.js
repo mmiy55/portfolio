@@ -17,8 +17,8 @@
         about: "Soy una programadora italiana, vivo y trabajo en Osaka, Japón. Me encantan los idiomas, resolver acertijos y dibujar. ",
       },
       jp : {
-         greet: "初めまして、ミリアムです。",
-         about: "イタリア人のバックエンド開発者です。現在大阪に住んでいます。外国語を学ぶことや、パズルの解決や、描を描くのが大好きです。",
+         greet: "初めまして",
+         about: "イタリア人のバックエンド開発者、ミリアムと申します。現在大阪に住んでいます。外国語を学ぶことや、パズルの解決や、描を描くのが大好きです。",
        }
     };
 
