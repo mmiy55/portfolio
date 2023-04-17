@@ -1,6 +1,5 @@
 .navbar-portfolio {
   font-family: 'Quicksand', sans-serif;
-
   padding: 12px;
   margin-bottom: 8px;
   display: flex;
@@ -8,8 +7,6 @@
   color:  #cec5ce;
   // background: #2C2622;
   z-index: 9000;
-
-
 }
 
 .sticky {
@@ -25,6 +22,8 @@
 .navbar-portfolio .navbar-menu{
   display: flex;
   justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: -12px;
 }
 
 
@@ -120,13 +119,15 @@
 .sl-nav li ul li {
   display: flex;
   position: relative;
+  color:#2B1427;
+  font-family: 'Quicksand', sans-serif;
   text-align: left;
   background: transparent;
-  // padding: 15px 15px;
+  padding: 2px 2px;
   padding-bottom:0;
   z-index: 2;
   font-size: 15px;
-  color: #3c3c3c;
+  // color: #3c3c3c;
 }
 .sl-nav li ul li:last-of-type {
   padding-bottom: 15px;
@@ -135,7 +136,7 @@
   padding-left: 5px;
 }
 .sl-nav li ul li span:hover, .sl-nav li ul li span.active {
-  color: #146c78;
+  color: #B05A6C;
 }
 .sl-flag {
   display: inline-block;
