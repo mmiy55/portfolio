@@ -7,7 +7,7 @@
             <div class="card-pjt mb-3 border border-2">
               <%= image_tag project.image, alt: "project image", class:"card-img-top" %>
             <div class="card-body">
-            <div style="display:flex; gap:8px;">
+            <div class="card-pjt header">
               <h4 class="card-title"> <%= project.name %></h4>
                   <div class="pjt-link">
                               <% link_to project.url,  target: '_blank' , class:"button-link" do %>
