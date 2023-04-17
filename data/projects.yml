@@ -14,12 +14,18 @@
   description: Tradys allows you to discover, participate and host local events, to enjoy traditions around the world.
   info: From prototype to MVP, we built this app in 5days in a team of four.
 
-# - name: Airbnb
-#   description: Decent description of the app
-#   image: projects/placeholder.png
-#   url:
+- name: Think-Peaks
+  image: projects/think-peaks.png
+  url: https://github.com/mmiy55/rails_goal_tracker
+  role: UX Design + Fullstack Developer
+  stack: Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Github
+  description: New years'resolutions? Keep track of your goals with Think-Peaks!
+  info: I built this app inspired by a Hackaton challenge I found on Troopl.com.
 
-# - name: Final project
-#   description: Decent description of the app
-#   image: projects/placeholder.png
-#   url:
+- name: Magic 8 ball - API
+  image: projects/magic-8.png
+  url: https://github.com/mmiy55/magic-8-ball-api
+  role: API developer
+  stack: Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Github
+  description: In doubt? Ask the magic 8 ball to answer your questions.
+  info: I built this RESTful API in Rails to practice the creation of endpoints for CRUD and the handling of user authentication in APIs.
