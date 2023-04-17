@@ -7,17 +7,22 @@
             <div class="card-pjt mb-3 border border-2">
               <%= image_tag project.image, alt: "project image", class:"card-img-top" %>
             <div class="card-body">
-                            <h4 class="card-title"> <%= project.name %></h4>
-                            <p class="card-text"><%= project.description %></p>
-                            <p><i class="fa-solid fa-wand-magic-sparkles"></i> <%= project.role %></p>
-                            <p><%= project.info %></p>
-                            <p>Tech-stack: <%= project.stack %></p>
-                              <% link_to project.url,  target: '_blank' do %>
-                              <button type="button" class="btn btn-outline-secondary">Link <i class="fas fa-external-link-alt" ></i></button>
+            <div style="display:flex; gap:8px;">
+              <h4 class="card-title"> <%= project.name %></h4>
+                  <div class="pjt-link">
+                              <% link_to project.url,  target: '_blank' , class:"button-link" do %>
+                                Link <i class="fas fa-external-link-alt" ></i>
                               <% end %>
-                              </div>
-                        </div>
+                  </div>
+            </div>
+            <div class="card-pjt-infos">
+                <p class="card-text"><%= project.description %></p>
+                  <p><i class="fa-solid fa-wand-magic-sparkles"></i> <%= project.role %></p>
+                    <p><i class="fa-solid fa-people-group"></i> <%= project.info %></p>
+                      <p><i class="fa-solid fa-code"></i> <%= project.stack %></p>
+            </div>
+             </div>
+          </div>
           <% end %>
-            </div>
-            </div>
+        </div>
 </div>
