@@ -1,24 +1,23 @@
+
 <div class="wrapper-projects  mb-5">
         <div class="title"> Projects</div>
 
         <div class="cards">
           <% data.projects.each do |project| %>
-            <div class="card-pjt mb-3">
-              <%= image_tag project.image, alt: "project image" %>
-            </div>
-              <div class="card-pjt-infos w-100 mb-3">
-                  <div class="title d-flex justify-content-center"> <%= project.name %>
-                  <% link_to project.url, class: 'external-link', target: '_blank' do %>
-                    <i class="fas fa-external-link-alt"></i>
-                  <% end %>
-                  </div>
-                  <p><%= project.role %></p>
-
-                <p><%= project.description %></p>
-                <p><%= project.info %></p>
-                <p>Tech-stack: <%= project.stack %></p>
-
-              </div>
-
+            <div class="card-pjt mb-3 border border-2">
+              <%= image_tag project.image, alt: "project image", class:"card-img-top" %>
+            <div class="card-body">
+                            <h4 class="card-title"> <%= project.name %></h4>
+                            <p><%= project.role %></p>
+                            <p class="card-text"><%= project.description %></p>
+                            <p><%= project.info %></p>
+                            <p>Tech-stack: <%= project.stack %></p>
+                              <% link_to project.url, class: 'external-link', target: '_blank' do %>
+                                <div class="btn btn-success"> Link <i class="fas fa-external-link-alt" ></i>
+                                </div>
+                              <% end %>
+                              </div>
+                        </div>
           <% end %>
+            </div>
 </div>
