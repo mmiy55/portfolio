@@ -1,6 +1,6 @@
 
 <div class="wrapper-projects  mb-5">
-        <div class="title"> Projects</div>
+        <div class="title pjt"> Projects</div>
 
         <div class="cards">
           <% data.projects.each do |project| %>
@@ -8,16 +8,16 @@
               <%= image_tag project.image, alt: "project image", class:"card-img-top" %>
             <div class="card-body">
                             <h4 class="card-title"> <%= project.name %></h4>
-                            <p><%= project.role %></p>
                             <p class="card-text"><%= project.description %></p>
+                            <p><i class="fa-solid fa-wand-magic-sparkles"></i> <%= project.role %></p>
                             <p><%= project.info %></p>
-                            <p>Tech-stack: <%= project.stack %></p>
-                              <% link_to project.url, class: 'external-link', target: '_blank' do %>
-                                <div class="btn btn-success"> Link <i class="fas fa-external-link-alt" ></i>
-                                </div>
+                            <p>Tech-stack: <%= project.stack %> <i class="devicon-rails-plain-wordmark"></i></p>
+                              <% link_to project.url,  target: '_blank' do %>
+                              <button type="button" class="btn btn-outline-secondary">Link <i class="fas fa-external-link-alt" ></i></button>
                               <% end %>
                               </div>
                         </div>
           <% end %>
+            </div>
             </div>
 </div>

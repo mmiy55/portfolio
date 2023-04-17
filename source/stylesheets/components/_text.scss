@@ -1,14 +1,14 @@
 #greet{
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 16px;
 }
 
 .title{
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 16px;
   text-transform: uppercase;
-  // text-decoration: underline;
-
+  &.pjt{
+    font-size: 3rem;
+    text-align: center;
+  }
 }

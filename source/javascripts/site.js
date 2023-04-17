@@ -7,23 +7,19 @@
       it: {
         greet: "Ciao, mi chiamo Miriam",
         about: "Sono una programmatrice di back-end italiana, vivo e lavoro ad Osaka, in Giappone. Amo le lingue , risolvere enigmi e disegnare",
-        skills: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku"
       },
       en: {
         greet: "Hello, I'm Miriam",
         about: "I'm a back-end developer, italian based in Osaka, Japan. I love languages, solving puzzles and drawing.",
-        skills: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku"
       },
       es: {
         greet: "¡Hola! Me llamo Miriam",
         about: "Soy una programadora italiana, vivo y trabajo en Osaka, Japón. Me encantan los idiomas, resolver acertijos y dibujar. ",
-        skills: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku"
       },
       jp : {
          greet: "初めまして、ミリアムです。",
          about: "イタリア人のバックエンド開発者です。現在大阪に住んでいます。外国語を学ぶことや、パズルの解決や、描を描くのが大好きです。",
-         skills: "Back-end developer | Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Figma | Github | Heroku"
-      }
+       }
     };
 
     function changeLanguage(lang) {
