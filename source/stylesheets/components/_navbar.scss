@@ -3,9 +3,21 @@
   margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
-  color: #cec5ce;
-  background: #2C2622;
+  color:  #cec5ce;
+  // background: #2C2622;
+  z-index: 9000;
 
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .navbar-portfolio .navbar-menu{
@@ -19,7 +31,6 @@
 }
 
 .navbar-portfolio li {
-  font-family: "logic-monospace", mono;
   font-style: normal;
   font-size: 14px;
   /* letter-spacing: 0.1em; */
@@ -43,8 +54,12 @@
 }
 
 .navbar-logo{
-  // align-self:flex-end;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  letter-spacing: 0;
 }
+
 // .nav-wrapper {
 //   width: 300px;
 //   margin: 100px auto;
@@ -72,7 +87,7 @@
   top:29px;
   right:-15px;
   display: block;
-  background: #fff;
+  background:#cec5ce;
   width: 120px;
   padding-top: 0px;
   z-index: 1;
