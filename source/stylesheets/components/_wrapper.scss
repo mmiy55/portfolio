@@ -1,3 +1,10 @@
+.wrapper-outer-container {
+  margin: 36px;;
+  border: 1px solid black;
+  overflow: hidden;
+  background-color: white;
+}
+
 body{
   background-color: #171312;
   color: #cec5ce;
@@ -20,6 +27,9 @@ body{
   font-size: 1em;
 
 }
+
+
+
 
 .wrapper-about{
   display: flex;

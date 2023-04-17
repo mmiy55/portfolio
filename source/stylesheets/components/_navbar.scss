@@ -1,9 +1,34 @@
 .navbar-portfolio {
+  padding: 12px;
+  margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
-  // background: #cec5ce;
   color: #cec5ce;
+  background: #2C2622;
+
 }
+
+.navbar-portfolio .navbar-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.navbar-portfolio ul {
+  list-style: none;
+}
+
+.navbar-portfolio li {
+  font-family: "logic-monospace", mono;
+  font-style: normal;
+  font-size: 14px;
+  /* letter-spacing: 0.1em; */
+  line-height: 1.5em;
+  margin-left: 16px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
 
 .navbar-portfolio .navbar-collapse {
   flex-grow: 0;
@@ -19,4 +44,110 @@
 
 .navbar-logo{
   // align-self:flex-end;
+}
+// .nav-wrapper {
+//   width: 300px;
+//   margin: 100px auto;
+//   text-align: center;
+// }
+  .sl-nav {
+  display: inline;
+}
+.sl-nav ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+.sl-nav li {
+  cursor: pointer;
+  padding-bottom:10px;
+}
+.sl-nav li ul {
+  display: none;
+}
+.sl-nav li:hover ul {
+  position: absolute;
+  top:29px;
+  right:-15px;
+  display: block;
+  background: #fff;
+  width: 120px;
+  padding-top: 0px;
+  z-index: 1;
+  border-radius:5px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+.sl-nav li:hover .triangle {
+  position: absolute;
+  top: 15px;
+  right: -10px;
+  z-index:10;
+  height: 14px;
+  overflow:hidden;
+  width: 30px;
+  background: transparent;
+}
+.sl-nav li:hover .triangle:after {
+  content: '';
+  display: block;
+  z-index: 20;
+  width: 15px;
+  transform: rotate(45deg) translateY(0px) translatex(10px);
+  height: 15px;
+  background: #fff;
+  border-radius:2px 0px 0px 0px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+.sl-nav li ul li {
+  display: flex;
+  position: relative;
+  text-align: left;
+  background: transparent;
+  // padding: 15px 15px;
+  padding-bottom:0;
+  z-index: 2;
+  font-size: 15px;
+  color: #3c3c3c;
+}
+.sl-nav li ul li:last-of-type {
+  padding-bottom: 15px;
+}
+.sl-nav li ul li span {
+  padding-left: 5px;
+}
+.sl-nav li ul li span:hover, .sl-nav li ul li span.active {
+  color: #146c78;
+}
+.sl-flag {
+  display: inline-block;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+  width: 15px;
+  height: 15px;
+  background: #aaa;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+  overflow: hidden;
+}
+.flag-esp {
+  background-image: url("/images/flags/esp-flag.png");
+  background-size: cover;
+  background-position: center center;
+}
+.flag-usa {
+  background-image:  url("/images/flags/usa-flag.png");
+  background-size: cover;
+  background-position: center center;
+}
+.flag-ita {
+  background-image:  url("/images/flags/ita-flag.png");
+  background-size: cover;
+  background-position: center center;
+}
+.flag-jap {
+  background-image: url("/images/flags/jap-flag.png");
+  background-size: cover;
+  background-position: center center;
 }

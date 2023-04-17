@@ -1,30 +1,32 @@
-<div class="navbar-logo">
-<%# <p>Miriam Fiandanese</p> %>
-</div>
-<div class="btn-group">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Languages <i class="fa-solid fa-earth-americas"></i>
-  </button>
-  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-    <li><button class="dropdown-item" type="button" id="jp" onclick="changeLanguage('jp')"> 日本語 <i class="fa-solid fa-earth-americas"></i></button></li>
-    <li><button class="dropdown-item" type="button" id ="it" onclick="changeLanguage('it')"> Italiano <i class="fa-solid fa-earth-americas"></i></button></li>
-    <li><button class="dropdown-item" type="button" id ="es" onclick="changeLanguage('es')"> Español <i class="fa-solid fa-earth-americas"></i></button></li>
-    <li><button class="dropdown-item" type="button" id ="en" onclick="changeLanguage('en')"> English <i class="fa-solid fa-earth-americas"></i></button></li>
+<div class="navbar-portfolio">
+  <span class="navbar-logo">
+    Miriam Fiandanese
+  </span>
+  <%# <nav class= > %>
+  <ul class="navbar-menu">
+    <li>
+      About me
+    </li>
+      <li>
+        Projects
+      </li>
+        <li>
 
+            <div class="sl-nav">
+              Languages:
+              <ul>
+                <li><b>English</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  <div class="triangle"></div>
+                  <ul>
+                    <li><div id="en" onclick="changeLanguage('en')"><i class="sl-flag flag-usa"></i> <span class="active">English</span></div></li>
+                    <li><div id="es" onclick="changeLanguage('es')" ><i class="sl-flag flag-esp"></i> <span>Espanol</span></div></li>
+                    <li><div id="jp" onclick="changeLanguage('jp')"><i class="sl-flag flag-jap"></i> <span> 日本語 </span></div></li>
+                    <li><div id="it" onclick="changeLanguage('it')"><i class="sl-flag flag-ita"></i> <span> Italiano </span></div></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+        </li>
   </ul>
+  <%# </nav> %>
 </div>
-
-<%# <div class="navbar-languages">
-
-<button class="btn btn-outline-secondary" id="en" onclick="changeLanguage('en')">
-    Change to English
-  </button>
-
-  <button class="btn btn-outline-secondary" id = "es" onclick="changeLanguage('es')">
-    Change to Spanish
-  </button>
-
-  <button class="btn btn-outline-secondary" id = "jp" onclick="changeLanguage('jp')">
-    Change to Japanese
-   </button>
-</div> %>
