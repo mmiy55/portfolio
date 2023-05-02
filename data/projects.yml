@@ -29,3 +29,11 @@
   stack: Ruby on Rails | HTML5 | CSS | Javascript | PostgreSQL | Github
   description: In doubt? Ask the magic 8 ball to answer your questions.
   info: I built this RESTful API in Rails to practice the creation of endpoints for CRUD and the handling of user authentication in APIs.
+
+- name: Show Action - Google Chrome Extension
+  image: projects/show-action.png
+  url: https://github.com/mmiy55/show_action
+  role: Developer
+  stack: Javascript | Github
+  description: A simple Google Chrome extension designed to improve accessibility of the browsed web page for color blind users.Version 1 is focused on "Call for Action".
+  info: A lot of the time we use font color or font weight to denote links and buttons, this may be not ideal for color blind users. I designed this extension to underline all the anchor text to make it easy to distinguish from regular text and use border around buttons to make them stand out
