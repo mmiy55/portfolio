@@ -30,10 +30,18 @@
   description: In doubt? Ask the magic 8 ball to answer your questions.
   info: I built this RESTful API in Rails to practice the creation of endpoints for CRUD and the handling of user authentication in APIs.
 
-- name: Show Action - Google Chrome Extension
+- name: Show Action - Chrome Extension
   image: projects/show-action.png
   url: https://github.com/mmiy55/show_action
   role: Developer
   stack: Javascript | Github
   description: A simple Google Chrome extension designed to improve accessibility of the browsed web page for color blind users.Version 1 is focused on "Call for Action".
-  info: A lot of the time we use font color or font weight to denote links and buttons, this may be not ideal for color blind users. I designed this extension to underline all the anchor text to make it easy to distinguish from regular text and use border around buttons to make them stand out
+  info: Sometimes we use font color or font weight for links and buttons, this may be not ideal for color blind users.This extension will underline all the anchor text to easily distinguish from regular text and use border around buttons to make them stand out.Next steps involve more research on UI Accessibility and implementation of other solutions.
+
+- name: Notify Flight Deal - Python program
+  image: projects/notify-flight-deal.png
+  url: https://github.com/mmiy55/python-notify-flight-deal
+  role: Developer
+  stack: Python | Google Sheets API | Skyscanner API  | Line Notify API | Github
+  description: This Python program that automatically look for flights on set requirements and send me a notification to my phone when found.
+  info: Tired of looking for budget-friendly flights to Italy, I played with the potential of Python and different APIs.I set my flight requirements on a Google Sheet, the program looks for matching flight through SkyScannerAPI and, once found, send a notification to my phone through LineNotify API and updates my Google Sheet with the matching flights' prices and reservation link. The main logic is tested and working. Next steps include code refactoring.
