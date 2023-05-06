@@ -43,5 +43,5 @@
   url: https://github.com/mmiy55/python-notify-flight-deal
   role: Developer
   stack: Python | Google Sheets API | Skyscanner API  | Line Notify API | Github
-  description: This Python program that automatically look for flights on set requirements and send me a notification to my phone when found.
+  description: This Python program looks for flights on set requirements and send me a notification to my phone when found.
   info: Tired of looking for budget-friendly flights to Italy, I played with the potential of Python and different APIs.I set my flight requirements on a Google Sheet, the program looks for matching flight through SkyScannerAPI and, once found, send a notification to my phone through LineNotify API and updates my Google Sheet with the matching flights' prices and reservation link. The main logic is tested and working. Next steps include code refactoring.
