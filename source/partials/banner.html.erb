@@ -1,7 +1,9 @@
 <div class="banner">
     <%# <div class="banner-pic"></div> %>
     <div class="banner-left">
-      <img class="avatar", src="https://media.licdn.com/dms/image/D5603AQE4hIXf8_1lVg/profile-displayphoto-shrink_800_800/0/1679322199446?e=1684972800&v=beta&t=uErkBz4ZCVv7iLSXXZTU82eHJonuY6x75_NanC5KYxE", alt="Miriam's profile photo" >
+      <%# <img class="avatar", src="", alt="Miriam's profile photo" > %>
+      <%= image_tag "avatar.png", alt: "Miriam's profile photo", class:"avatar" %>
+
         <!-- Social Links Section -->
         <%= partial 'partials/social' %>
     </div>
